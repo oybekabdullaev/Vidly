@@ -12,12 +12,13 @@ namespace Vidly.Controllers
         // GET: Movies
         public ActionResult Index()
         {
-            var movie = new Movie()
+            var movies = new List<Movie>()
             {
-                Name = "Shrek!"
+                new Movie() {Name = "Shrek"},
+                new Movie() {Name = "Wall-e"}
             };
             
-            return View(movie);
+            return View(movies);
         }
     }
 }
