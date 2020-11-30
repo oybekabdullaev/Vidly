@@ -7,17 +7,17 @@ using Vidly.Models;
 
 namespace Vidly.Controllers
 {
-    public class MoviesController : Controller
+    public class CustomersController : Controller
     {
-        // GET: Movies
+        // GET: Customers
         public ActionResult Index()
         {
-            var movie = new Movie()
+            var customer = new Customer()
             {
-                Name = "Shrek!"
+                Name = "John"
             };
-            
-            return View(movie);
+
+            return View(customer);
         }
     }
 }
