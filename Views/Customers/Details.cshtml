@@ -7,10 +7,11 @@
 <h2>@Model.Name</h2>
 <ul>
     <li>Membership Type: @Model.MembershipType.Name</li>
-    @if (Model.Birthdate != null)
+    @if (Model.Birthdate.HasValue)
     {
         <li>
-            Birthdate: @Model.Birthdate.Value.ToString("d MMMM yyyy", new System.Globalization.CultureInfo("en-EN"))
+            Birthdate: @Model.Birthdate.Value.ToString("d MMMM yyyy", 
+                           new System.Globalization.CultureInfo("en-EN"))
         </li>
     }
 </ul>
