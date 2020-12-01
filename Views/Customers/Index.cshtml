@@ -16,6 +16,7 @@ else
         <thead>
             <tr>
                 <th>Customer</th>
+                <th>Membership Type</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +30,9 @@ else
                             "Customers",
                             new {id = customer.Id},
                             null)
+                    </td>
+                    <td>
+                        @customer.MembershipType.Name
                     </td>
                 </tr>
             }
