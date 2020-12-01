@@ -175,6 +175,7 @@
     <Compile Include="EntityConfigurations\CustomerConfiguration.cs" />
     <Compile Include="EntityConfigurations\GenreConfiguration.cs" />
     <Compile Include="EntityConfigurations\MembershipTypeConfiguration.cs" />
+    <Compile Include="EntityConfigurations\MovieConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,6 +222,10 @@
     <Compile Include="Migrations\202012010904394_AddPropertiesToMovies.cs" />
     <Compile Include="Migrations\202012010904394_AddPropertiesToMovies.Designer.cs">
       <DependentUpon>202012010904394_AddPropertiesToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012011633435_ApplyConfigurationsToMovies.cs" />
+    <Compile Include="Migrations\202012011633435_ApplyConfigurationsToMovies.Designer.cs">
+      <DependentUpon>202012011633435_ApplyConfigurationsToMovies.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -348,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012010904394_AddPropertiesToMovies.resx">
       <DependentUpon>202012010904394_AddPropertiesToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012011633435_ApplyConfigurationsToMovies.resx">
+      <DependentUpon>202012011633435_ApplyConfigurationsToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
