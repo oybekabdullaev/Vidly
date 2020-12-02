@@ -17,6 +17,12 @@ namespace Vidly.App_Start
                 opt => opt.Ignore());
 
             Mapper.CreateMap<Customer, CustomerDto>();
+
+            Mapper.CreateMap<MovieDto, Movie>()
+                .ForMember(c => c.Id,
+                    opt => opt.Ignore());
+
+            Mapper.CreateMap<Movie, MovieDto>();
         }
     }
 }
