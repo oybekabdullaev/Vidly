@@ -247,6 +247,10 @@
     <Compile Include="Migrations\202012011633435_ApplyConfigurationsToMovies.Designer.cs">
       <DependentUpon>202012011633435_ApplyConfigurationsToMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012021118319_SeedUsers.cs" />
+    <Compile Include="Migrations\202012021118319_SeedUsers.Designer.cs">
+      <DependentUpon>202012021118319_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -551,6 +555,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012011633435_ApplyConfigurationsToMovies.resx">
       <DependentUpon>202012011633435_ApplyConfigurationsToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012021118319_SeedUsers.resx">
+      <DependentUpon>202012021118319_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
