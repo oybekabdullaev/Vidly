@@ -11,7 +11,6 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
-    [Authorize(Roles = RoleName.CanManageMovies)]
     public class MoviesController : ApiController
     {
         private readonly ApplicationDbContext _context;
@@ -43,6 +42,7 @@ namespace Vidly.Controllers.Api
 
         // POST /api/movies
         [HttpPost]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public IHttpActionResult CreateMovie(MovieDto movieDto)
         {
             if (!ModelState.IsValid)
@@ -60,6 +60,7 @@ namespace Vidly.Controllers.Api
 
         // PUT /api/movies/{id}
         [HttpPut]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public IHttpActionResult EditMovie(int id, MovieDto movieDto)
         {
             if (!ModelState.IsValid)
@@ -79,6 +80,7 @@ namespace Vidly.Controllers.Api
 
         // DELETE /api/movies/{id}
         [HttpDelete]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public IHttpActionResult RemoveMovie(int id)
         {
             var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
