@@ -11,6 +11,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
+    [Authorize(Roles = RoleName.CanManageMovies)]
     public class MoviesController : ApiController
     {
         private readonly ApplicationDbContext _context;
